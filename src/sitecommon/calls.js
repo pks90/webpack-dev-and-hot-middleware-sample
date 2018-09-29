@@ -31,6 +31,7 @@ $(document).ready(function() {
   $("#formAlert").hide()
 
   window.login = function() {
+
     getUsers().then(result => {
       if(isJson(result)) {
         var udetail = JSON.parse(createJSONLogin())
@@ -49,15 +50,6 @@ $(document).ready(function() {
       }
     })
   }
-
-window.submitAssessment = function() {
-    $.ajax({
-      url: '../../distServer/',
-      type: 'POST',
-      contentType: 'application/json',
-      data: JSON.stringify({number:1})
-    })
-}
 
 window.registration = function() {
    postRegistration(createJSONRegistration()).then(result => {

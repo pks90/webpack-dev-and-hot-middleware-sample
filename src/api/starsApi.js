@@ -36,6 +36,7 @@ function post (url, data) {
 }
 
 function onSuccess (response) {
+  console.log(response)
   return response.text()
 }
 
