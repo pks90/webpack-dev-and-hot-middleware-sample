@@ -1,0 +1,18 @@
+body
+{
+    margin-top: 70px
+}
+
+.well {
+    border-color: coral
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background-image: none
+}
+
+.hidden
+{
+   display: none
+}

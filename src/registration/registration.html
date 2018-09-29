@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StaRS Registration</title>
+</head>
+<body>
+  <div id="page" >
+  <section id="body" class="container">
+   <section id="main" class="col-md-8 col-md-offset-2">
+    <div id="formAlert" class="alert alert-danger alert-dismissible fade in hidden">
+      <a class="close">×</a>
+      <strong>Error!</strong> All fields are mandatory!
+    </div>
+    <form id="registration" method="post">
+      <div class="row col-md-12 col-sm-12">
+       <img src="/../images/ms_icon.png"
+       class="col-md-2 col-xs-4 col-sm-2"/>
+       <img src="/../images/splash_logo.jpg"
+       class="col-md-4 col-md-offset-6 col-xs-8 col-sm-4 col-sm-offset-6"/>
+     </div>
+     <br/>
+     <h4 class="modal-title">Please fill in the required Details !</h4>
+     <br/>
+     <div class="form-group">
+        <input type="text" class="form-control" placeholder="Your Name" required="required" name="uname">
+      </div>
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Email i.e. pks@siemens.com" required="required" name="email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" placeholder="Password" required="required" name="pass">
+    </div>
+    <a class="btn btn-primary btn-md" role="button" id="submit" onclick="registration()">Request Access</a>
+  </form>
+  <br/>
+  <div class="text-center small">Already have an account? <a href="#" onclick="launchlogin()">Login Now</a></div>
+</section>
+</section>
+
+<footer class="container">
+  <div class="col-md-8 col-md-offset-2">
+   <br/>
+   <p>&copy; StaRS AG</p>
+ </div>
+</footer>
+</div>
+</body>
+</html>
